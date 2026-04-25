@@ -1,5 +1,5 @@
 {
-	"name": "n8n-nodes-plausible",
+	"name": "@pir-ahsan-raza/n8n-nodes-plausible",
 	"version": "0.1.1",
 	"description": "n8n community node for Plausible Analytics - query realtime visitors, aggregate stats, and breakdowns.",
 	"license": "MIT",
