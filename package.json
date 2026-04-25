@@ -1,20 +1,20 @@
 {
 	"name": "n8n-nodes-plausible",
-"version": "0.1.0",
-"description": "n8n community node for Plausible Analytics - query realtime visitors, aggregate stats, and breakdowns.",
+	"version": "0.1.1",
+	"description": "n8n community node for Plausible Analytics - query realtime visitors, aggregate stats, and breakdowns.",
 	"license": "MIT",
 	"homepage": "",
 	"keywords": [
 		"n8n-community-node-package"
 	],
 	"author": {
-  "name": "Pir Ahsan Raza",
-  "email": "its.pirahsanraza@gmail.com"
-},
+		"name": "Pir Ahsan Raza",
+		"email": "its.pirahsanraza@gmail.com"
+	},
 	"repository": {
-  "type": "git",
-  "url": "https://github.com/pir-ahsan-raza/n8n-nodes-plausible.git"
-},
+		"type": "git",
+		"url": "https://github.com/pir-ahsan-raza/n8n-nodes-plausible.git"
+	},
 	"scripts": {
 		"build": "n8n-node build",
 		"build:watch": "tsc --watch",
@@ -28,14 +28,14 @@
 		"dist"
 	],
 	"n8n": {
-  "n8nNodesApiVersion": 1,
-  "credentials": [
-    "dist/credentials/PlausibleApi.credentials.js"
-  ],
-  "nodes": [
-    "dist/nodes/Plausible/Plausible.node.js"
-  ]
-},
+		"n8nNodesApiVersion": 1,
+		"credentials": [
+			"dist/credentials/PlausibleApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/Plausible/Plausible.node.js"
+		]
+	},
 	"devDependencies": {
 		"@n8n/node-cli": "*",
 		"eslint": "9.39.4",
