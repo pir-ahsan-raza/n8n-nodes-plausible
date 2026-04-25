@@ -38,9 +38,9 @@ export class PlausibleApi implements ICredentialType {
 		},
 	};
 	test: ICredentialTestRequest = {
-		request: {
-			baseURL: '={{$credentials.baseUrl}}',
-			url: '/api/v1/stats/realtime/visitors?site_id=test',
-		},
+    request: {
+        baseURL: '={{$credentials.baseUrl}}',
+        url: '/api/v1/sites',
+    	},
 	};
 }
