@@ -1,6 +1,6 @@
 {
 	"name": "@pir-ahsan-raza/n8n-nodes-plausible",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "n8n community node for Plausible Analytics - query realtime visitors, aggregate stats, and breakdowns.",
 	"license": "MIT",
 	"homepage": "",
@@ -13,7 +13,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/pir-ahsan-raza/n8n-nodes-plausible.git"
+		"url": "git+https://github.com/pir-ahsan-raza/n8n-nodes-plausible.git"
 	},
 	"scripts": {
 		"build": "n8n-node build",
