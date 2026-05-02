@@ -4,8 +4,9 @@ import {
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
+	JsonObject,
+	NodeApiError,
 	NodeConnectionTypes,
-	NodeOperationError,
 } from 'n8n-workflow';
 
 export class Plausible implements INodeType {
@@ -22,7 +23,7 @@ export class Plausible implements INodeType {
 			name: 'Plausible',
 		},
 		inputs: [NodeConnectionTypes.Main],
-outputs: [NodeConnectionTypes.Main],
+		outputs: [NodeConnectionTypes.Main],
 		credentials: [
 			{
 				name: 'plausibleApi',
@@ -157,10 +158,14 @@ outputs: [NodeConnectionTypes.Main],
 				});
 			} catch (error) {
 				if (this.continueOnFail()) {
-					returnData.push({ json: { error: (error as Error).message }, pairedItem: { item: i } });
+					returnData.push({
+						json: { error: (error as Error).message },
+						pairedItem: { item: i },
+					});
 					continue;
 				}
-				throw new NodeOperationError(this.getNode(), error as Error, { itemIndex: i });
+
+				throw new NodeApiError(this.getNode(), error as JsonObject, { itemIndex: i });
 			}
 		}
 

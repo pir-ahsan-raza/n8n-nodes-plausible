@@ -3,7 +3,7 @@
 	"version": "0.1.5",
 	"description": "n8n community node for Plausible Analytics - query realtime visitors, aggregate stats, and breakdowns.",
 	"license": "MIT",
-	"homepage": "",
+	"homepage": "https://github.com/pir-ahsan-raza/n8n-nodes-plausible#readme",
 	"keywords": [
 		"n8n-community-node-package"
 	],
