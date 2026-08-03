@@ -1,4 +1,4 @@
-import n8nNodesBaseConfig from '@n8n/eslint-config/nodes';
+import { config as n8nNodesBaseConfig } from '@n8n/node-cli/eslint';
 
 const config = [
 	...n8nNodesBaseConfig,
