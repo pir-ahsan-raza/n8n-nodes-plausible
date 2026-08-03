@@ -1,49 +1,49 @@
 {
-	"name": "@pir-ahsan-raza/n8n-nodes-plausible",
-	"version": "0.1.7",
-	"description": "n8n community node for Plausible Analytics - query realtime visitors, aggregate stats, and breakdowns.",
-	"license": "MIT",
-	"homepage": "https://github.com/pir-ahsan-raza/n8n-nodes-plausible#readme",
-	"keywords": [
-		"n8n-community-node-package"
-	],
-	"author": {
-		"name": "Pir Ahsan Raza",
-		"email": "its.pirahsanraza@gmail.com"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/pir-ahsan-raza/n8n-nodes-plausible.git"
-	},
-	"scripts": {
-		"build": "n8n-node build",
-		"build:watch": "tsc --watch",
-		"dev": "n8n-node dev",
-		"lint": "n8n-node lint",
-		"lint:fix": "n8n-node lint --fix",
-		"release": "n8n-node release",
-		"prepublishOnly": "n8n-node prerelease"
-	},
-	"files": [
-		"dist"
-	],
-	"n8n": {
-		"n8nNodesApiVersion": 1,
-		"credentials": [
-			"dist/credentials/PlausibleApi.credentials.js"
-		],
-		"nodes": [
-			"dist/nodes/Plausible/Plausible.node.js"
-		]
-	},
-	"devDependencies": {
-		"@n8n/node-cli": "*",
-		"eslint": "9.39.4",
-		"prettier": "3.8.3",
-		"release-it": "20.0.0",
-		"typescript": "5.9.3"
-	},
-	"peerDependencies": {
-		"n8n-workflow": "*"
-	}
+  "name": "@pir-ahsan-raza/n8n-nodes-plausible",
+  "version": "0.1.7",
+  "description": "n8n community node for Plausible Analytics - query realtime visitors, aggregate stats, and breakdowns.",
+  "license": "MIT",
+  "homepage": "https://github.com/pir-ahsan-raza/n8n-nodes-plausible#readme",
+  "keywords": [
+    "n8n-community-node-package"
+  ],
+  "author": {
+    "name": "Pir Ahsan Raza",
+    "email": "its.pirahsanraza@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pir-ahsan-raza/n8n-nodes-plausible.git"
+  },
+  "scripts": {
+    "build": "node init && n8n-node build",
+    "build:watch": "node init && tsc --watch",
+    "dev": "node init && n8n-node dev",
+    "lint": "n8n-node lint",
+    "lint:fix": "n8n-node lint --fix",
+    "release": "n8n-node release",
+    "prepublishOnly": "n8n-node prerelease"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/PlausibleApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/Plausible/Plausible.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@n8n/node-cli": "*",
+    "eslint": "9.39.4",
+    "prettier": "3.8.3",
+    "release-it": "20.0.0",
+    "typescript": "5.9.3"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
 }
